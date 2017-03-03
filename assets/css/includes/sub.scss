@@ -1,0 +1,36 @@
+.sub {
+    background: url(../images/cursor-bg-1@2x.png) 0 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+            text-align: left;
+
+    background-size: calc(100%);
+    &__bg2 {
+        background: url(../images/cursor-bg-2@2x.png) 0 0;
+        width: 100%;
+        z-index: 0;
+        height: 100%;
+        background-size: calc(100%);
+    }
+    &__h2 {
+        text-align: left;
+        font-weight: 900;
+        font-size: 2.15rem;
+    }
+    &__h3 {
+        @extend .sub__h2;
+        font-weight:lighter;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    &__p {
+        width:50%;
+        font-weight:lighter;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-top:1rem;
+        text-align: left;
+    }
+}

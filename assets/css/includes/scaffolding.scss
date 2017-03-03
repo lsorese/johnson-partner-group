@@ -1,0 +1,208 @@
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    height: 100%;
+    font: 18px/21px "proxima-nova", sans-serif;
+}
+
+.base {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    &__inside {
+        position: relative;
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        &--wpadding {
+            height: calc(100% - 80px);
+            width: calc(100% - 80px);
+            top: 40px;
+            left: 40px;
+        }
+    }
+    &__pagination {
+        background: #fff;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: 40px;
+        padding: 0;
+        margin: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    &__social {
+        position: fixed;
+        display: flex;
+        height: 100%;
+        width: 7rem;
+        top: 0;
+        @include desktop {
+            width: 5rem;
+        }
+        @include tablet {
+            width: 3.5rem;
+        }
+        @include phone {
+            width: 1.5rem;
+        }
+    }
+}
+
+.socialLinks {
+    position: fixed;
+    bottom: 0;
+    width:7rem;
+        @include desktop {
+            width: 5rem;
+        }
+        @include tablet {
+            width: 3.5rem;
+        }
+        @include phone {
+            width: 1.5rem;
+        }
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    &__a {
+        align-items: center;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        display: block;
+        width: 100%;
+        height: 2.25rem;
+        background: transparent url('../images/icon-fb.svg') no-repeat center center;
+        background-size: auto .65rem;
+        &--instagram {
+            background-image: url('../images/icon-in.svg');
+        }
+        &--twitter {
+            background-image: url('../images/icon-tw.svg');
+
+        }
+
+    }
+    &__span {
+        transform: rotate(90deg);
+        height:4rem;
+        width:7rem;
+        line-height: 4rem;
+        text-align: center;
+        color:$blue;
+        font-size: .75rem;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+.panel {
+    height: 100%;
+    padding: 7rem;
+    @include desktop {
+        padding: 5rem;
+    }
+    @include tablet {
+        padding: 3.5rem;
+    }
+    @include phone {
+        padding: 1.5rem;
+    }
+    &--flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+}

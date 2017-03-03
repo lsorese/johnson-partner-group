@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <defs>
+        <style>
+        .cls-1 {
+            fill: #fff;
+        }
+        
+        .cls-2,
+        .cls-3 {
+            fill: none;
+            stroke-miterlimit: 10;
+        }
+        
+        .cls-2 {
+            stroke: gray;
+        }
+        
+        .cls-3 {
+            stroke: #218df6;
+        }
+        .nostroke {
+        	stroke:none;
+        }
+        </style>
+    </defs>
+    <title>cursor-bg-1</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <rect class="cls-1" width="1920" height="1080" />
+            <circle class="cls-2" cx="97.5" cy="587.47" r="9" />
+            <circle class="cls-2" cx="157" cy="497.97" r="5.5" />
+            <circle class="cls-2" cx="1594" cy="453.97" r="3.5" />
+            <circle class="cls-2" cx="399.5" cy="551.47" r="3" />
+            <circle class="cls-2" cx="862.5" cy="204.47" r="4" />
+            <circle class="cls-2" cx="1476" cy="254.97" r="2.5" />
+            <path class="cls-3" d="M175,191" />
+            <path class="cls-3" d="M90,191" />
+            <path class="cls-3" d="M125,221.47" />
+        </g>
+    </g>
+</svg>

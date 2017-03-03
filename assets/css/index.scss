@@ -1,0 +1,11 @@
+$blue: #218DF6;
+$black: #231F20;
+
+@import '../../bower_components/typeplate-starter-kit/css/typeplate';
+@import '../../bower_components/font-awesome/scss/font-awesome';
+@import 'includes/mixin';
+
+@import 'includes/scaffolding';
+@import 'includes/home';
+@import 'includes/sub';
+
