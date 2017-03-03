@@ -5,13 +5,40 @@
 
 @keyframes fade-in-left {
     0% {
-        -webkit-transform: translateX(-50px);
-        transform: translateX(-50px);
+        -webkit-transform: translateX(-1rem);
+        transform: translateX(-1rem);
         opacity: 0;
     }
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(1rem);
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in-from-bottom {
+    0% {
+        -webkit-transform: translateY(2.5rem);
+        transform: translateY(2.5rem);
+        opacity: 0;
+    }
+    20% {
+        opacity: .4;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -22,53 +49,53 @@
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-
 @keyframes blink {
     0% {
         opacity: 1;
     }
+    
     50% {
         opacity: 0;
     }
+    
     100% {
         opacity: 1;
     }
 }
-
 @-webkit-keyframes blink {
     0% {
         opacity: 1;
     }
+    
     50% {
         opacity: 0;
     }
+    
     100% {
         opacity: 1;
     }
 }
-
 @-moz-keyframes blink {
     0% {
         opacity: 1;
     }
+    
     50% {
         opacity: 0;
     }
+    
     100% {
         opacity: 1;
     }
 }
-
 html {
     height: 100%;
 }
-
 body {
     background: #fff;
     height: 100%;
     font: 18px/21px "proxima-nova", sans-serif;
 }
-
 .base {
     position: absolute;
     height: 100%;
@@ -77,7 +104,7 @@ body {
     overflow: hidden;
     &__inside {
         position: relative;
-        background: #fff;
+        background: transparent;
         height: 100%;
         width: 100%;
         &--wpadding {
@@ -87,6 +114,7 @@ body {
             left: 40px;
         }
     }
+    
     &__pagination {
         background: #fff;
         position: absolute;
@@ -100,12 +128,16 @@ body {
         align-items: center;
         justify-content: center;
     }
+    
     &__social {
+        transition: all .25s ease;
+        opacity: 0;
         position: fixed;
         display: flex;
         height: 100%;
         width: 7rem;
         top: 0;
+        z-index: 20;
         @include desktop {
             width: 5rem;
         }
@@ -114,23 +146,29 @@ body {
         }
         @include phone {
             width: 1.5rem;
+            display: none !important;
+        }
+        &.active {
+            opacity: 1;
         }
     }
 }
-
 .socialLinks {
     position: fixed;
     bottom: 0;
-    width:7rem;
-        @include desktop {
-            width: 5rem;
-        }
-        @include tablet {
-            width: 3.5rem;
-        }
-        @include phone {
-            width: 1.5rem;
-        }
+    width: 7rem;
+    @include desktop {
+        width: 5rem;
+    }
+    
+    @include tablet {
+        width: 3.5rem;
+    }
+    
+    @include phone {
+        width: 1.5rem;
+    }
+    
     margin-bottom: 4rem;
     display: flex;
     align-items: center;
@@ -150,47 +188,47 @@ body {
         }
         &--twitter {
             background-image: url('../images/icon-tw.svg');
-
         }
-
     }
+    
     &__span {
         transform: rotate(90deg);
-        height:4rem;
-        width:7rem;
+        height: 4rem;
+        width: 7rem;
         line-height: 4rem;
         text-align: center;
-        color:$blue;
+        color: $blue;
         font-size: .75rem;
         font-weight: lighter;
         letter-spacing: 1px;
     }
 }
-
 .swiper-container {
     width: 100%;
     height: 100%;
 }
-
 .swiper-slide {
+    width: 100% !important;
     position: relative;
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: transparent;
 }
-
 .panel {
     height: 100%;
     padding: 7rem;
     @include desktop {
         padding: 5rem;
     }
+    
     @include tablet {
         padding: 3.5rem;
     }
+    
     @include phone {
         padding: 1.5rem;
     }
+    
     &--flex {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -204,5 +242,6 @@ body {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        justify-content: flex-start;
     }
 }

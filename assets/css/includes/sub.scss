@@ -1,36 +1,91 @@
 .sub {
-    background: url(../images/cursor-bg-1@2x.png) 0 0;
     width: 100%;
     z-index: 0;
     height: 100%;
-            text-align: left;
-
-    background-size: calc(100%);
+    text-align: left;
     &__bg2 {
-        background: url(../images/cursor-bg-2@2x.png) 0 0;
         width: 100%;
         z-index: 0;
         height: 100%;
-        background-size: calc(100%);
     }
     &__h2 {
+        position: relative;
         text-align: left;
         font-weight: 900;
         font-size: 2.15rem;
+        transition: all fade-in-from-bottom 1s;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            background: transparent url(../images/icon-lines.svg) no-repeat 0 .7rem;
+            background-size: 85% auto;
+            height: 3rem;
+            width: 4rem;
+            left: -4rem;
+        }
     }
     &__h3 {
-        @extend .sub__h2;
-        font-weight:lighter;
+        position: relative;
+        text-align: left;
+        font-weight: 900;
+        font-size: 2.15rem;
+        background: none;
+        font-weight: lighter;
         font-size: 1rem;
         margin-bottom: 0;
+        margin-top: .5rem;
+        &:before {
+            content: none !important;
+        }
     }
-
     &__p {
-        width:50%;
-        font-weight:lighter;
+        width: 50%;
+        font-weight: lighter;
         font-size: 1rem;
         line-height: 1.4rem;
-        margin-top:1rem;
+        margin-top: 1rem;
         text-align: left;
+        @include phone {
+            width: 100%;
+            font-size: .8rem;
+            line-height: 1.2rem;
+        }
     }
+    &__image {
+        float: right;
+        width: 30%;
+        margin-right: 5%;
+        margin-top: 3rem;
+        @include tablet {
+            width: 45%;
+            margin-right: 0;
+        }
+        @include phone {
+            margin: 0 auto 2rem auto;
+            float: none;
+            width: 40%;
+            height: auto;
+        }
+    }
+}
+
+.swiper-slide-active .sub__h2 span {
+    display: block;
+    animation: fade-in-left .75s ease-out forwards;
+}
+.swiper-slide-active .sub__h3,
+.swiper-slide-active .sub__p {
+    display: block;
+    animation: fade-in-right 1s ease-out forwards;
+}
+
+
+.cd {
+    z-index: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }

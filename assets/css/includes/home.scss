@@ -1,13 +1,25 @@
 .home {
-    background: #7D50C0;
-    background: linear-gradient(45deg, #0A42A7 1%, #288AEE 100%);
     display: flex;
     justify-content: flex-start;
+    .home__bg {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        background: #7D50C0;
+        background: linear-gradient(45deg, #0A42A7 1%, #288AEE 100%);
+    }
     &__wrap {
         justify-content: left;
         align-content: center;
         text-align: left;
         height: 16rem;
+        @include tablet {
+            height: 12rem;
+        }
+        @include phone {
+            height: 10rem;
+        }
     }
     &__logo {
         position: absolute;
@@ -21,10 +33,12 @@
         }
     }
     &__h1 {
+        animation: fade-in-from-bottom 1s ease-out forwards;
         color: #fff;
         @extend h4;
         font-weight: 800;
         line-height: 1.9rem;
+        font-size: 2rem;
         margin-bottom: .5rem;
         @include desktop {
             font-size: 1.75rem;
@@ -45,6 +59,8 @@
         font-size: 5rem;
         line-height: 4.5rem;
         margin-left: 0.5rem;
+        display: block;
+        height: 100%;
         @include desktop {
             font-size: 4rem;
             line-height: 4rem;
@@ -66,6 +82,7 @@
         bottom: 3.4rem;
         margin-left: 3.5rem;
         left: 0;
+        cursor:pointer;
         @include desktop {
             margin-left: 1.5rem;
             left: 0;
@@ -123,4 +140,8 @@
             svg {}
         }
     }
+}
+
+.swiper-slide-active .home__h1 {
+    animation: fade-in-from-bottom 1s ease-out forwards;
 }

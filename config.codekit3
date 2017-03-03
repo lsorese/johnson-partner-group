@@ -622,11 +622,11 @@
 		},
 	"\/assets\/images\/cursor-bg-1@2x.png": {
 		"ft": 32768,
-		"iS": 40523,
+		"iS": 18653,
 		"oA": 0,
 		"oAP": "\/assets\/images\/cursor-bg-1@2x.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/assets\/images\/cursor-bg-2.png": {
 		"ft": 32768,
@@ -648,11 +648,11 @@
 		},
 	"\/assets\/images\/cursor-bg-2@2x.png": {
 		"ft": 32768,
-		"iS": 40545,
+		"iS": 18031,
 		"oA": 0,
 		"oAP": "\/assets\/images\/cursor-bg-2@2x.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/assets\/images\/cursor-bg.png": {
 		"ft": 32768,
@@ -677,6 +677,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/images\/icon-in.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/icon-lines.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/icon-lines.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -2788,6 +2798,166 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/bower_components\/LogosDistort\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/LogosDistort\/.bowerrc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/.bowerrc",
+		"oF": 0
+		},
+	"\/bower_components\/LogosDistort\/.codeclimate.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/.codeclimate.yml",
+		"oF": 0
+		},
+	"\/bower_components\/LogosDistort\/.gitattributes": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/.gitattributes",
+		"oF": 0
+		},
+	"\/bower_components\/LogosDistort\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/.gitignore",
+		"oF": 0
+		},
+	"\/bower_components\/LogosDistort\/.jshintignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/.jshintignore",
+		"oF": 0
+		},
+	"\/bower_components\/LogosDistort\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/LogosDistort\/CONTRIBUTING.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/CONTRIBUTING.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/LogosDistort\/dist\/css\/perspectiveRules.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/dist\/css\/perspectiveRules.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/LogosDistort\/dist\/jquery.logosDistort.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/dist\/jquery.logosDistort.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/LogosDistort\/dist\/jquery.logosDistort.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/dist\/jquery.logosDistort.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/LogosDistort\/gulpfile.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/gulpfile.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/LogosDistort\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/LICENSE",
+		"oF": 0
+		},
+	"\/bower_components\/LogosDistort\/logosDistort.jquery.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/logosDistort.jquery.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/LogosDistort\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/LogosDistort\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/LogosDistort\/src\/jquery.logosDistort.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/src\/jquery.logosDistort.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/LogosDistort\/src\/perspectiveRules.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/LogosDistort\/src\/perspectiveRules.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/bower_components\/svg.js\/.bower.json": {
 		"ft": 524288,

@@ -21,43 +21,49 @@
     </script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/animsition/dist/js/animsition.min.js"></script>
+    <script type="text/javascript" src="bower_components/LogosDistort/dist/jquery.logosDistort.min.js"></script>
     <script type="text/javascript" src="bower_components/typed.js/dist/typed.min.js"></script>
-    <script type="text/javascript" src="bower_components/svg.js/dist/svg.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" href="bower_components/LogosDistort/dist/css/perspectiveRules.css" />
     <link rel="stylesheet" href="bower_components/animsition/dist/css/animsition.min.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <script>
     </script>
-    <script src="assets/js/app.js"></script>
 </head>
 
 <body>
     <div class="base">
-        <div class="base__inside ">
+        <div class="cd">
+            <img src="assets/images/cursor-bg-1.png" alt="image-1">
+            <img src="assets/images/cursor-bg-2.png" alt="image-2">
+        </div>
+        <div class="base__inside">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide home">
-                        <div class="panel panel--flex">
-                            <div class="home__wrap">
-                                <div class="home__logo">
-                                    <a href="#" class="home__logo__a"></a>
-                                </div>
-                                <h1 class="home__h1">hello, we are <span>John Family Partners</span></h1>
-                                <h2 class="home__h2"><span class="home__h2__rewrite"></span><span class="typed-cursor"></span></h2>
-                            </div>
-                            <div class="home__scroll">
-                                <div class="home__scroll__wrap">
-                                    <div class="home__scroll__text">scroll</div>
-                                    <div id="scroll-circle" class="home__scroll__circle">
-                                        <svg width="10rem" height="10rem">
-                                            <circle cx="46" cy="140" r="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></circle>
-                                        </svg>
+                        <div class="home__bg">
+                            <div class="panel panel--flex">
+                                <div class="home__wrap">
+                                    <div class="home__logo">
+                                        <a href="#" class="home__logo__a"></a>
                                     </div>
-                                    <div class="home__scroll_arrow">
-                                        <svg width="10rem" height="10rem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <image x="35" y="120" height="25" width="10" xlink:href="assets/images/arrow.svg"></image>
-                                        </svg>
+                                    <h1 class="home__h1">hello, we are <span>John Family Partners</span></h1>
+                                    <h2 class="home__h2"><span class="home__h2__rewrite"></span><span class="typed-cursor"></span></h2>
+                                </div>
+                                <div class="home__scroll">
+                                    <div class="home__scroll__wrap">
+                                        <div class="home__scroll__text">scroll</div>
+                                        <div id="scroll-circle" class="home__scroll__circle">
+                                            <svg width="10rem" height="10rem">
+                                                <circle cx="46" cy="140" r="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></circle>
+                                            </svg>
+                                        </div>
+                                        <div class="home__scroll_arrow">
+                                            <svg width="10rem" height="10rem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <image x="35" y="120" height="25" width="10" xlink:href="assets/images/arrow.svg"></image>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -66,26 +72,33 @@
                     <div class="swiper-slide sub">
                         <div class="sub__bg2">
                             <div class="panel">
-                                <h2 class="sub__h2">who are we</h2>
+                                <img class="sub__image" src="assets/images/placeholder-who.jpg" alt="who" />
+                                <h2 class="sub__h2"><span>who are we</span></h2>
                                 <h3 class="sub__h3">an engineer + a producer.</h3>
                                 <p class="sub__p">Johnson Partners Group is a unified communications, web dev, and digital service delivery company. Formed in 2016, we provide end to end services and solutions for clients in corporate, technology, healthcare, public, entertainment and commercial sectors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sub">
+                        <div class="sub__bg2">
+                            <div class="panel">
+                                <img class="sub__image" src="assets/images/placeholder-what.jpg" alt="who" />
+                                <h2 class="sub__h2"><span>what we do</span></h2>
+                                <h3 class="sub__h3">Work on Cool + Creative Projects that create lasting impressions.</h3>
+                                <p class="sub__p">Our team works to create strategic technology and consulting plans digital project management, business continuity planning, organizational transformation, product release, and end user experience services.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="base__pagination">
-            <div class="row">
-            </div>
-        </div>
         <div class="base__social">
-        <div class="socialLinks">
-            <a href="#" class="socialLinks__a socialLinks__a--facebook">&nbsp;</a>
-            <a href="#" class="socialLinks__a socialLinks__a--instagram">&nbsp;</a>
-            <a href="#" class="socialLinks__a socialLinks__a--twitter">&nbsp;</a>
-            <span class="socialLinks__span">connect</span>
-        </div>
+            <div class="socialLinks">
+                <a href="#" class="socialLinks__a socialLinks__a--facebook">&nbsp;</a>
+                <a href="#" class="socialLinks__a socialLinks__a--instagram">&nbsp;</a>
+                <a href="#" class="socialLinks__a socialLinks__a--twitter">&nbsp;</a>
+                <span class="socialLinks__span">connect</span>
+            </div>
         </div>
     </div>
 </body>
