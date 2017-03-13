@@ -1,30 +1,47 @@
 jQuery(function() {
 
-   jQuery('.swiper-slide:nth-child(1)').addClass('active');
+    jQuery('.lines').click(function() {
+        $(this).children('.line').each(function() {
+            if ($(this).attr('class').indexOf("line--small") >= 0) {
+                $(this).removeClass('line--small');
+            } else {
+                $(this).addClass('line--small');
+            }
+        })
+    })
 
-    var swiper = new Swiper('.subs', {
-        paginationClickable: false,
+    $('.sub:not(:first)').hide();
+    $('.lines').click(function() {
+        $('.sub').first().fadeOut(function() {
+            $(this).next().fadeIn();
+            $(this).appendTo('.subs__wrap');
+        });
+        return false;
+    });
+
+
+
+    var swiper = new Swiper('.base', {
         slidesPerView: 1,
         spaceBetween: 0,
         keyboardControl: true,
         mousewheelControl: true,
-        direction: 'vertical',
-        effect: 'fade',
+        effect: "scroll",
+        direction: "vertical",
         onSlideChangeStart: function(swiper) {
             if (swiper.activeIndex !== 0) {
-                $('.base__social').show();
+                $('.base__social').fadeIn();
                 $('.base__social').addClass('active');
             } else {
-                $('.base__social').hide();
+                $('.base__social').fadeOut();
                 $('.base__social').removeClass('active');
 
             }
-
         }
-    });
+    })
 
     $('.home__scroll').on('click', function(e) {
-        swiper.slideTo(1, 1000);
+        swiper.slideTo(1, 1000)
     });
 
     setTimeout(function() {
@@ -42,7 +59,10 @@ jQuery(function() {
                 "Marketing.",
                 "Web Development."
             ],
-            typeSpeed: 30
+            typeSpeed: 30,
+            contentType: 'html'
+
+
         });
     }, 1000);
 

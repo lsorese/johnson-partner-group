@@ -38,6 +38,10 @@
     "animsition": "^4.0.2",
     "typeplate-starter-kit": "^3.0.1",
     "typed.js": "typedjs#^1.1.4",
-    "svg.js": "^2.4.0"
+    "svg.js": "^2.4.0",
+    "Looper.js": "looper#^1.1.6"
+  },
+  "resolutions": {
+    "jquery": "~1.11"
   }
 }

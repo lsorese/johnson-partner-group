@@ -1,8 +1,18 @@
+.subs {
+    &__wrap {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 .sub {
     width: 100%;
     z-index: 0;
     height: 100%;
     text-align: left;
+    position: relative;
+    display: block;
     &__bg2 {
         width: 100%;
         z-index: 0;
@@ -12,61 +22,69 @@
         position: relative;
         text-align: left;
         font-weight: 900;
-        font-size: 2.15rem;
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+        margin-top: 1.5rem;
         transition: all fade-in-from-bottom 1s;
-
-        &:before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            background: transparent url(../images/icon-lines.svg) no-repeat 0 .7rem;
-            background-size: 85% auto;
-            height: 3rem;
-            width: 4rem;
-            left: -4rem;
-        }
     }
     &__h3 {
+        width: 40%;
         position: relative;
         text-align: left;
         font-weight: 900;
-        font-size: 2.15rem;
         background: none;
         font-weight: lighter;
-        font-size: 1rem;
         margin-bottom: 0;
-        margin-top: .5rem;
-        &:before {
-            content: none !important;
+        margin-top: .4rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        @include tablet {
+            width: 100%;
+        }
+        @include phone {
+            font-size: .75rem;
+            line-height: 1rem;
         }
     }
     &__p {
-        width: 50%;
+        width: 40%;
         font-weight: lighter;
         font-size: 1rem;
-        line-height: 1.4rem;
-        margin-top: 1rem;
+        line-height: 1.375rem;
+        margin-top: 1.2rem;
         text-align: left;
-        @include phone {
+        @include tablet {
             width: 100%;
-            font-size: .8rem;
-            line-height: 1.2rem;
+        }
+        @include phone {
+            margin-top: .85rem;
+            font-size: .75rem;
+            line-height: 1rem;
         }
     }
     &__image {
         float: right;
-        width: 30%;
-        margin-right: 5%;
-        margin-top: 3rem;
+        width: 25%;
+        position: absolute;
+        top: 22%;
+        right: 22%;
+        animation: fade-in-right-delay 1.5s ease-out forwards;
+        @include ultra {
+            top: 18%;
+        }
         @include tablet {
-            width: 45%;
-            margin-right: 0;
+            position: static;
+            float: none;
+            height: 60%;
+            width:auto;
+            top: 0;
+            right: 0;
+            margin: 4rem auto 0 auto;
         }
         @include phone {
-            margin: 0 auto 2rem auto;
-            float: none;
-            width: 40%;
-            height: auto;
+            margin-top: 1rem;
+            width: auto;
+            height:40%;
         }
     }
 }
@@ -75,17 +93,18 @@
     display: block;
     animation: fade-in-left .75s ease-out forwards;
 }
+
 .swiper-slide-active .sub__h3,
 .swiper-slide-active .sub__p {
     display: block;
     animation: fade-in-right 1s ease-out forwards;
 }
 
-
 .cd {
+    top: 0;
     z-index: 0;
     position: relative;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
 }
